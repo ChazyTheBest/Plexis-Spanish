@@ -1,0 +1,189 @@
+[33mcommit 9bb5bdc9be6a7846a90460dfcafdf71bb9b297b3[m
+Author: Chazy Chaz <ChazyTheBest@hotmail.es>
+Date:   Mon May 21 04:29:53 2012 +0200
+
+    Add spanish folder as a new language - more work comming soon ;)
+
+[1mdiff --git a/application/language/spanish/button-mac.png b/application/language/spanish/button-mac.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b76015a[m
+Binary files /dev/null and b/application/language/spanish/button-mac.png differ
+[1mdiff --git a/application/language/spanish/button-pc.png b/application/language/spanish/button-pc.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..794eb86[m
+Binary files /dev/null and b/application/language/spanish/button-pc.png differ
+[1mdiff --git a/application/language/spanish/core_errors.php b/application/language/spanish/core_errors.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f3dce5c[m
+[1m--- /dev/null[m
+[1m+++ b/application/language/spanish/core_errors.php[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32m﻿<?php[m
+[32m+[m[32mreturn array([m
+[32m+[m[32m    'autoload_failed' => "Autoload falló al cargar la clase: %s",[m
+[32m+[m[32m    'benchmark_key_not_found' => "La clave Benchmark \"%s\" no existe. Debes iniciar el contador antes de mostrarlo.",[m
+[32m+[m[32m    'db_autoload_failed' => "No se pudo autocargar la extensión de la base de datos \"%s\"",[m
+[32m+[m[32m    'db_connect_error' => "Incapaz de conectar a la base de datos '%s' desde el host: %s:%s!",[m
+[32m+[m[32m    'db_sqlite_connect_error' => "Incapaz de conectar a la base de datos SQLite '%s'!",[m
+[32m+[m[32m    'db_empty_query' => "La consulta estaba vacía. Por favor, ¡crea una consulta antes de llamar al metodo 'consulta'!",[m[41m [m
+[32m+[m[32m    'db_improper_key_format' => 'La tecla de parámetro que pasó a la consulta es incorrecta. Por favor, asegurate de que estás usando un punto y coma ";" en tus teclas de parametro.',[m
+[32m+[m[32m    'db_key_not_found' => "La información de conexión para la clave \"%s\" no se encuentra en el archivo de configuración de la base de datos.",[m
+[32m+[m[32m    'db_select_error' => "No se puede conectar a la base de datos: %s",[m
+[32m+[m[32m    'fetal_error' => '¡Error del feto! Por favor, póngase en contacto con un administrador.',[m
+[32m+[m[32m    'missing_page_view' => "No se puede localizar el archivo view \"%s\". Por favor, asegurate que una pagina view esta creada y se llama correctamente.",[m
+[32m+[m[32m    'none' => 'Ningun mensaje especificado.',[m
+[32m+[m[32m    'non_array' => "La variable \$%s ha pasado en un formato que no es matriz (array) en el método %s",[m
+[32m+[m[32m    'non_int' => "La variable \$%s ha pasado en un formato que no es entero (intenger) en el método %s",[m
+[32m+[m[32m    'non_string' => "La variable \$%s ha pasado en un formato que no es cadena (string) en el método %s",[m
+[32m+[m[32m    'parser_endless_loop' => "El analizador de plantillas se encontró con un posible bucle sin fin.",[m
+[32m+[m[32m    'plugin_error' => "El plugin %s falló al ejecutar la acción \"%s\". Mensaje: %s",[m
+[32m+[m[32m    'plugin_failed_init' => "El plugin %s falló al inicializar. Mensaje: %s",[m
+[32m+[m[32m    'plugin_not_found' => "No se pudo localizar el archivo del plugin: %s.php",[m
+[32m+[m[32m    'template_doesnt_exist' => "La plantilla \"%s\" no existe en la carpeta \"%s\" , o le falta el archivo \"layout.php\"",[m
+[32m+[m[32m    'template_load_error' => "No se puede cargar el archivo de la plantilla \"%s\". Esto puede deberse a un archivo o plantilla no existente.",[m
+[32m+[m[32m    'unknown_template_command' => "Error de compilación de la plantilla: Comando de plantilla desconocido \"%s\"",[m
+[32m+[m[32m    'unkown_template_var_in_array' => "Variable de plantilla desconocida \"%s\" en matriz (array) \"%s\"",[m
+[32m+[m[32m    'unkown_template_var' => "Variable de plantilla desconocida \"%s\""[m
+[32m+[m[32m);[m
+\ No newline at end of file[m
+[1mdiff --git a/application/language/spanish/emails.xml b/application/language/spanish/emails.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..67ddf09[m
+[1m--- /dev/null[m
+[1m+++ b/application/language/spanish/emails.xml[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!--[m
+[32m+[m[32m    Global Emails language file.[m
+[32m+[m[32m    Format:[m[41m [m
+[32m+[m[32m        <email_key>[m
+[32m+[m[32m            <subject>[m
+[32m+[m[32m            <message>[m
+[32m+[m[32m        </email_key>[m
+[32m+[m[41m        [m
+[32m+[m[32m    ** All html open/close tags ('<' and '>') need to be converted to BBcode open/close tags ('[' and ']').[m
+[32m+[m[32m    because XML open and close tags match html. Ex: [p] becomes <p>[m
+[32m+[m[32m-->[m
+[32m+[m[32m<emails>[m
+[32m+[m[32m    <!-- Password Change Notification Email -->[m
+[32m+[m[32m    <password_change>[m
+[32m+[m[32m        <subject>Changes to your Account</subject>[m
+[32m+[m[32m        <message>[m
+[32m+[m[32m            [p][m
+[32m+[m[32m                Hello, {username}, [br /][br /][m
+[32m+[m[32m                This is an automated notification regarding the recent password change made to your account.[br /][br /][m
+[32m+[m[32m                *** If you made this password change, please disregard this notification.[br /][br /][m
+[32m+[m[32m                If you did not request to your password, we recommend you visit the [a href="{recovery_link}"]account recovery[/a] page as soon as possible, as your account may have been compromised.[m
+[32m+[m[32m            [/p][m
+[32m+[m[32m        </message>[m
+[32m+[m[32m    </password_change>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!-- Account Activate Email -->[m
+[32m+[m[32m    <account_activation_req>[m
+[32m+[m[32m        <subject>Account Activation Required</subject>[m
+[32m+[m[32m        <message>[m
+[32m+[m[32m            [p][m
+[32m+[m[32m                Hello, {username}, [br /][br /][m
+[32m+[m[32m                Thank you for registering an account with us! We require everyone to activate their account before logging into the site or our servers.[m[41m [m
+[32m+[m[32m                You can do this by simply clicking the link below, or copy/pasting the address in your browser. Once activated, you will have full access to your account.[m
+[32m+[m[32m                [br /][br /][a href="{activate_link}"]Click here to activate your account[/a][br /][br /] Or copy + paste this in your browser to activate your account: {activate_link}[m
+[32m+[m[32m            [/p][m
+[32m+[m[32m        </message>[m
+[32m+[m[32m    </account_activation_req>[m
+[32m+[m[32m</emails>[m
+\ No newline at end of file[m
+[1mdiff --git a/application/language/spanish/howtoplay.html b/application/language/spanish/howtoplay.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3c5c1e8[m
+[1m--- /dev/null[m
+[1m+++ b/application/language/spanish/howtoplay.html[m
+[36m@@ -0,0 +1,282 @@[m
+[32m+[m[32m﻿<script language="javascript" type="text/javascript">[m
+[32m+[m[32m        function muestra(nombrediv) {[m
+[32m+[m[32m                if(document.getElementById(nombrediv).style.display == '') {[m
+[32m+[m[32m                                document.getElementById(nombrediv).style.display = 'none';[m
+[32m+[m[32m                } else {[m
+[32m+[m[32m                                document.getElementById(nombrediv).style.display = '';[m
+[32m+[m[32m                }[m
+[32m+[m[32m        }[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[32m<ol>[m
+[32m+[m[32m    <li><a href="javascript:;" onClick="muestra('installer')";>Download the World of Warcraft Installer</a>[m
+[32m+[m		[32m<div style="display:none" id="installer"><br>[m
+[32m+[m			[32m<a href="javascript:;" onClick="muestra('installer_english')";>English (enUS) / Engrish (enGB)</a>[m
+[32m+[m				[32m<div style="display:none" id="installer_english"><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-enGB-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-enGB-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-enUS-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-enUS-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a>[m
+[32m+[m				[32m</div><br>[m
+[32m+[m					[32m<a href="javascript:;" onClick="muestra('installer_spanish')";>Castellano (esES) / Español (esMX)</a>[m
+[32m+[m				[32m<div style="display:none" id="installer_spanish"><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-esES-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-esES-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-esMX-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-esMX-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a>[m
+[32m+[m				[32m</div><br>[m
+[32m+[m					[32m<a href="javascript:;" onClick="muestra('installer_other')";>Français (frFR) / Deutsch (deDE) / Russian (ruRU)</a>[m
+[32m+[m				[32m<div style="display:none" id="installer_other"><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-frFR-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-frFR-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-deDE-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-deDE-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a><br>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-ruRU-PC"><img border='0' src="pc_download_1.jpg" onmouseover="this.src='pc_download_2.jpg';" onmouseout="this.src='pc_download_1.jpg';"/></a>[m
+[32m+[m					[32m<a href="http://tinyurl.com/InstallWoW-ruRU-MAC"><img border='0' src="mac_download_1.jpg" onmouseover="this.src='mac_download_2.jpg';" onmouseout="this.src='mac_download_1.jpg';"/></a>[m
+[32m+[m				[32m</div>[m
+[32m+[m		[32m</div><br>[m
+[32m+[m	[32m</li>[m
+[32m+[m[32m<li>Install World of Warcraft: Wrath of the Lich King</li>[m
+[32m+[m[32m    <li><a href="javascript:;" onClick="muestra('patches')";>Patch your client to last WotLK version</a>[m
+[32m+[m[32m<div style="display:none" id="patches"><br>[m
+[32m+[m[32m<b> Patch 3.2.0 (3.x to 3.2)<br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('english')";>English (enUS) / Engrish (enGB)</a>[m
+[32m+[m[32m<div style="display:none" id="english"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-enGB-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-enGB-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-enUS-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-enUS-MAC"><img src="button-mac.png" border="0"></a></div><br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('spanish')";>Castellano (esES) / Español (esMX)</a>[m
+[32m+[m[32m<div style="display:none" id="spanish"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-esES-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-esES-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-esMX-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-esMX-MAC"><img src="button-mac.png" border="0"></a></div><br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('other')";>Français (frFR) / Deutsch (deDE) / Russian (ruRU)</a>[m
+[32m+[m[32m<div style="display:none" id="other"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-frFR-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-frFR-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-deDE-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-deDE-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-ruRU-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320-ruRU-MAC"><img src="button-mac.png" border="0"></a></div></b><br>[m
+[32m+[m[32m<b> Patch 3.2.0a<br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('english2')";>English (enUS) / Engrish (enGB)</a>[m
+[32m+[m[32m<div style="display:none" id="english2"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-enGB-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-enGB-PC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-enUS-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-enUS-MAC"><img src="button-mac.png" border="0"></a></div><br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('spanish2')";>Castellano (esES) / Español (esMX)</a>[m
+[32m+[m[32m<div style="display:none" id="spanish2"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-esES-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-esES-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-esMX-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-esMX-MAC"><img src="button-mac.png" border="0"></a></div><br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('other2')";>Français (frFR) / Deutsch (deDE) / Russian (ruRU)</a>[m
+[32m+[m[32m<div style="display:none" id="other2"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-frFR-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-frFR-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-deDE-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-deDE-MAC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-ruRU-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-320a-ruRU-MAC"><img src="button-mac.png" border="0"></a></div></b><br>[m
+[32m+[m[32m<b> Patch 3.2.2<br>[m
+[32m+[m[32m<a href="javascript:;" onClick="muestra('english3')";>English (enUS) / Engrish (enGB)</a>[m
+[32m+[m[32m<div style="display:none" id="english3"><br>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-322-enGB-PC"><img src="button-pc.png" border="0"></a>[m
+[32m+[m[32m<a href="http://tinyurl.com/WoW-322-enGB-PC"><img src="button-mac.png" border="0"></a><br>[m
+[32m+[
