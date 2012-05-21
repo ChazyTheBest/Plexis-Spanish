@@ -104,7 +104,7 @@
                         <li><a href="{SITE_URL}/account/register">Register</a></li>
                         
                     <?php else: ?>
-                        <li><a href="#">Account</a>
+                        <li><a href="{SITE_URL}/account">Account</a>
                             <ul class="subnav">
                                 <li><a href="{SITE_URL}/account">Dashboard</a></li>
                                 <li><a href="{SITE_URL}/account/update/password">Change Password</a></li>
