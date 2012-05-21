@@ -2,7 +2,7 @@
 return array(
     'account_access_denied' => "El acceso a esta cuenta ha sido suspendido.",
     'access_denied_privlages' => 'El nivel de tu cuenta no tiene privilegios suficientes para realizar esta acción.',
-    'account_ban_success' => '¡Cuenta baneada con exito!',
+    'account_ban_success' => '¡Cuenta baneada con éxito!',
     'account_ban_error' => '¡La cuenta no pudo ser baneada! Por favor, revisa tu registro de errores.',
     'account_cant_ban_self' => '¡No puedes banearte a ti mismo!',
     'account_delete_success' => 'Cuenta eliminada, serás redirigido ahora...',
