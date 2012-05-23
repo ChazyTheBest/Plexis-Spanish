@@ -128,7 +128,11 @@ $config['autoload_libraries'] = array('Auth', 'Template', 'Statistics');
 |
 */
 
+<<<<<<< HEAD
 $config['autoload_helpers'] = array('plexis');
+=======
+$config['autoload_helpers'] = array('plexis', 'plexis_language', 'plexis_realms', 'plexis_modules', 'plexis_templates');
+>>>>>>> d808b5d161c3619ad12405ba3a9ab359676e794e
 
 
 /*
